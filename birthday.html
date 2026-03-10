@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Lovely Girl 💙</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#a6d8ff,#6fb6ff,#3f8efc);
+    text-align:center;
+    color:white;
+}
+
+/* header */
+header{
+    padding:40px;
+}
+
+h1{
+    font-size:50px;
+}
+
+.message{
+    font-size:20px;
+    width:70%;
+    margin:auto;
+    padding:20px;
+}
+
+/* cute images section */
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:30px;
+}
+
+.gallery img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.1);
+}
+
+/* video section */
+.video{
+    margin:40px;
+}
+
+/* floating hearts */
+.heart{
+    position:fixed;
+    bottom:-10px;
+    font-size:20px;
+    animation:floatUp 6s linear infinite;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100vh);
+        opacity:0;
+    }
+}
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Happy Birthday My Love 💙</h1>
+<p class="message">
+
+
+    HAPPY 24th BIRTHDAY 🎉🎂🎊 MY LOOVEEEEE 
+    
+
+    <p>IT’S THESE MONTHS OF THE YEAR AGAIN NGA MAG ABUT TA UG EDAD 💓🥹</p>
+    <p>YOU’VE DONE SO WELL THE PAST DAYS ON THINGS THAT I COULD NEVER HAVE THOUGHT ABOUT: FINALLY GETTING THE TOR NGA DUGAY NANG GI HILAKAN AND GIKA STRESS, GOING TO BUTUAN PARA MAKA GRAB UG SLOT NGA NOT 100% SURE IF MAKUHA BA GYUD, AND FOR THE PAST MONTHS STUDYING FOR THE LONG AWAITED BOARD EXAMS NGA GRABEH KA STRESSFUUULLLL. GOING THE EXTRA MILE TO TAKE THE FTF CLASSES! </p>
+<p>REALIZING THESE LAYU RA KAAYU AKONG GIPANGPROB SA IMO AND MAKAINSPIRE NGA MANINGKAMUT KO SA AKONG KAUGALINGON NGA MAKAOVERCOME SA CHALLENGES, KNOWING THAT THERE’S SOMEONE LIKE YOU WHO SUPPORTS ME. LAYU NA KAAYU KAG NAABTAN LOVEEEE AND I KNOW YOU’LL CONTINUE TO DO YOUR BEST!!!. INGON SILA LOVE IS POISON TO A WOMAN WITH DREAMS, PERO I THINK WITH THE RIGHT LOVE IT ACTUALLY STRENGTHENS HER RESOLVE TO REACH THOSE DREAMS WITH LOVE AS A MAIN SUPPORT ALONG THE WAY! </p>
+<p>GOD BLESS AND ENJOY YOUR SPECIAL DAY, LOOOVE.💓💓💓</p>
+
+💙Here's a blue themed gallery for YOUUU💙  
+  
+You make every day brighter and happier.I hope this little page reminds you how special you are to me.  
+Happy Birthday BIBIII! 🎂💙
+</p>
+</header>
+
+<h2>Cute Pics For You 🐳💙</h2>
+
+<div class="gallery">
+<img src="1.jpg">
+<img src="2.jpg">
+<img src="3.jpg">
+<img src="4.jpg">
+<img src="5.jpg">
+<img src="6.jpg">
+</div>
+
+<h2>A Special Video For You 🎥</h2>
+
+<div class="video">
+
+<!-- YOUTUBE VIDEO OPTION -->
+
+
+
+<video width="600" controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+
+
+</div>
+
+<footer>
+Made with love 💙
+</footer>
+
+<script>
+
+/* floating hearts animation */
+
+function createHeart(){
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML="💙";
+
+    heart.style.left = Math.random()*100 + "vw";
+    heart.style.animationDuration = (Math.random()*3+3)+"s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },6000);
+}
+
+setInterval(createHeart,400);
+
+</script>
+
+</body>
+</html>
